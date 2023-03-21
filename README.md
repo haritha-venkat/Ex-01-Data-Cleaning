@@ -6,16 +6,16 @@ To read the given data and perform data cleaning and save the cleaned data to a 
 Data cleaning is the process of preparing data for analysis by removing or modifying data that is incorrect ,incompleted , irrelevant , duplicated or improperly formatted. Data cleaning is not simply about erasing data ,but rather finding a way to maximize datasets accuracy without necessarily deleting the information.
 
 # ALGORITHM
-## STEP 1
+## STEP 1:
 Read the given Data
 
-## STEP 2
+## STEP 2:
 Get the information about the data
 
-## STEP 3
+## STEP 3:
 Remove the null values from the data
 
-## STEP 4
+## STEP 4:
 Save the Clean data to the file
 
 # CODE
@@ -46,24 +46,24 @@ df.isnull().sum()
 ```
 ## OUPUT
 
-# DATA
+# DATA:
 ![Screenshot 2023-03-21 101907](https://user-images.githubusercontent.com/120380280/226522301-bb501ac4-e744-4dc8-81ce-226b448a6dc8.png)
 
-## NON NULL BEFORE
+## NON NULL BEFORE:
 
 # df.info:
 ![Screenshot 2023-03-21 102456](https://user-images.githubusercontent.com/120380280/226522116-930a13a9-704e-4aa9-bc41-b73d3ae77a82.png)
 
-# MODE
+# MODE:
 ![Screenshot 2023-03-21 102601](https://user-images.githubusercontent.com/120380280/226522253-c84da8a0-e753-4354-b6b4-6758261023a0.png)
 
-# MEAN
+# MEAN:
 ![Screenshot 2023-03-21 102737](https://user-images.githubusercontent.com/120380280/226522454-d13e2269-fd07-4ec8-b4ed-86d55bb076b2.png)
 
-# MEDIAN
+# MEDIAN:
 ![Screenshot 2023-03-21 102846](https://user-images.githubusercontent.com/120380280/226522568-fa641799-490b-4f7e-8b28-511c85806840.png)
 
-## NON NULL AFTER
+## NON NULL AFTER:
 
 # df.info:
 ![Screenshot 2023-03-21 102945](https://user-images.githubusercontent.com/120380280/226522672-1cd124c5-69a3-4245-9e60-e164b5601996.png)
@@ -72,6 +72,6 @@ df.isnull().sum()
 ![Screenshot 2023-03-21 103124](https://user-images.githubusercontent.com/120380280/226522831-212a4c37-b746-4c8f-9af4-8b8ea9d0f0c3.png)
 
 
-# RESULT:
+## RESULT:
 
 Thus,the given data is read,cleansed and the cleaned data is saved into the file.
