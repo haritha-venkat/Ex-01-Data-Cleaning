@@ -19,6 +19,7 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE
+```
 Name : harithashree.v
 Register Number : 212222230046
 import pandas as pd
@@ -42,6 +43,7 @@ df['Credit_History']=df['Credit_History'].fillna(df['Credit_History'].median())
 df.head()
 df.info()
 df.isnull().sum()
+```
 
 # OUTPUT
 
@@ -71,7 +73,8 @@ df.isnull().sum()
 
 
 # RESULT:
-        Thus,the given data is read,cleansed and the cleaned data is saved into the file.
+
+Thus,the given data is read,cleansed and the cleaned data is saved into the file.
 
 
 
