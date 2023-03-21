@@ -44,9 +44,9 @@ df.head()
 df.info()
 df.isnull().sum()
 ```
-# OUPUT
+## OUPUT
 
-###DATA
+# DATA
 ![Screenshot 2023-03-21 101907](https://user-images.githubusercontent.com/120380280/226522301-bb501ac4-e744-4dc8-81ce-226b448a6dc8.png)
 
 ## NON NULL BEFORE
