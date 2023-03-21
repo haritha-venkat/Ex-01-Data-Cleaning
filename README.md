@@ -69,7 +69,8 @@ df.isnull().sum()
 ![Screenshot 2023-03-21 102945](https://user-images.githubusercontent.com/120380280/226522672-1cd124c5-69a3-4245-9e60-e164b5601996.png)
 
 # df.isnull().sum():
-![Screenshot 2023-03-21 103124](https://user-images.githubusercontent.com/120380280/226522831-212a4c37-b746-4c8f-9af4-8b8ea9d0f0c3.png)
+![Screenshot 2023-03-21 113001](https://user-images.githubusercontent.com/121285701/226530017-c6bb7a85-5e3c-40b7-bb9f-ef588798187d.png)
+
 
 
 ## RESULT:
