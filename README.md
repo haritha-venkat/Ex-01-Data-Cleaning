@@ -19,47 +19,59 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE
-```
 Name : thirisha.s
 Register Number : 212222230160
-**Data Cleaning - Data_set.csv**
-import numpy as np
+```
 import pandas as pd
-import seaborn as sbn
-df = pd.read_csv("/content/Data_set.csv")
+df=pd.read_csv("/content/Loan_data (1).csv")
 print(df)
 df.head(10)
 df.info()
 df.isnull()
 df.isnull().sum()
-df['show_name'] = df['show_name'].fillna(df['aired_on'].mode()[0])
-df['aired_on'] = df['aired_on'].fillna(df['aired_on'].mode()[0])
-df['original_network'] = df['original_network'].fillna(df['aired_on'].mode()[0])
+df['Loan_ID']=df['Loan_ID'].fillna(df['Dependents'].mode()[0])
+df['Dependents']=df['Dependents'].fillna(df['Dependents'].mode()[0])
+df['Education']=df['Education'].fillna(df['Dependents'].mode()[0])
+df['Self_Employed']=df['Self_Employed'].fillna(df['Self_Employed'].mode()[0])
+df['Gender']=df['Gender'].fillna(df['Gender'].mode()[0])
 df.head()
-df['rating'] = df['rating'].fillna(df['rating'].mean())
-df['current_overall_rank'] = df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
+df['ApplicantIncome']=df['ApplicantIncome'].fillna(df['ApplicantIncome'].mean())
+df['Loan_Amount_Term']=df['Loan_Amount_Term'].fillna(df['Loan_Amount_Term'].mean())
+df['LoanAmount']=df['LoanAmount'].fillna(df['LoanAmount'].mean())
 df.head()
-df['watchers'] = df['watchers'].fillna(df['watchers'].median())
+df['Credit_History']=df['Credit_History'].fillna(df['Credit_History'].median())
 df.head()
 df.info()
 df.isnull().sum()
-
-**Data Cleannig - Loan_data.csv**
-data = pd.read_csv("/content/Loan_data.csv")
-print(data)
-data.head(5)
-data.isnull()
-data.isnull().sum()
-data['Gender'] = data["Gender"].fillna(data['Gender'].mode()[0])
-data['Dependents'] = data["Dependents"].fillna(data['Dependents'].mode()[0])
-data['Self_Employed'] = data["Self_Employed"].fillna(data['Self_Employed'].mode()[0])
-data['Credit_History'] = data["Credit_History"].fillna(data['Credit_History'].mode()[0])
-data.head()
-data['LoanAmount']=data['LoanAmount'].fillna(data['LoanAmount'].median())
-data.head()
-data['Loan_Amount_Term']=data['Loan_Amount_Term'].fillna(data['Loan_Amount_Term'].mean())
-data.head()
-data.info()
-data.isnull().sum()
 ```
 # OUPUT
+
+###DATA
+![Screenshot 2023-03-21 101907](https://user-images.githubusercontent.com/120380280/226522301-bb501ac4-e744-4dc8-81ce-226b448a6dc8.png)
+
+## NON NULL BEFORE
+
+#df.info:
+![Screenshot 2023-03-21 102456](https://user-images.githubusercontent.com/120380280/226522116-930a13a9-704e-4aa9-bc41-b73d3ae77a82.png)
+
+##MODE
+![Screenshot 2023-03-21 102601](https://user-images.githubusercontent.com/120380280/226522253-c84da8a0-e753-4354-b6b4-6758261023a0.png)
+
+##MEAN
+![Screenshot 2023-03-21 102737](https://user-images.githubusercontent.com/120380280/226522454-d13e2269-fd07-4ec8-b4ed-86d55bb076b2.png)
+
+##MEDIAN
+![Screenshot 2023-03-21 102846](https://user-images.githubusercontent.com/120380280/226522568-fa641799-490b-4f7e-8b28-511c85806840.png)
+
+###NON NULL AFTER
+
+#df.info:
+![Screenshot 2023-03-21 102945](https://user-images.githubusercontent.com/120380280/226522672-1cd124c5-69a3-4245-9e60-e164b5601996.png)
+
+#df.isnull().sum():
+![Screenshot 2023-03-21 103124](https://user-images.githubusercontent.com/120380280/226522831-212a4c37-b746-4c8f-9af4-8b8ea9d0f0c3.png)
+
+
+###RESULT:
+
+Thus,the given data is read,cleansed and the cleaned data is saved into the file.
